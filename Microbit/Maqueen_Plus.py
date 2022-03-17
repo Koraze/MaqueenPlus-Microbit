@@ -18,8 +18,8 @@ def initI2C():
 
 # Fonctions motorisation
 def motorSetPower(speedL, speedR): # [L: -255, R: +255]
-    dirL   = 1 + (speedL > 0)
-    dirR   = 1 + (speedR > 0)
+    dirL   = 1 + (speedL < 0)
+    dirR   = 1 + (speedR < 0)
     speedL = abs(speedL)
     speedR = abs(speedR)
     buf = bytearray([0x00, dirL, speedL, dirR, speedR])
@@ -33,7 +33,7 @@ def motorSetPID(switch): # 0 disable / 1 enable
     buf = bytearray([0x0A, switch])
     i2c.write(I2caddr, buf)
         
-def motorReadPower():  # [L: -255, R: +255]
+def motorReadPower(): 
     buf = bytearray([0x00])
     i2c.write(I2caddr, buf)
     speeds = struct.unpack('>BBBB', i2c.read(I2caddr, 8))
