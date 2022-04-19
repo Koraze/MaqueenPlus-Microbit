@@ -80,7 +80,9 @@ def servosSet(angle1, angle2, angle3): # number:0-2 , angle 0-180 (170)
     buf = bytearray([0x14, angle1, angle2, angle3])
     i2c.write(I2caddr, buf)
     
-def servosRead(): # number:0-2 , angle 0-180 (170)
+def servosRead(angle1, angle2, angle3): # number:0-2 , angle 0-180 (170)
+    buf = bytearray([0x14])
+    i2c.write(I2caddr, buf)
     servos = struct.unpack('>BBB', i2c.readfrom(I2caddr, 6))
     return servos
 
