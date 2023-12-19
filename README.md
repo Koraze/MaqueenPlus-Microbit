@@ -30,8 +30,8 @@ Cette librairie est reprise de celle de Christophe Gueneau. Merci à lui pour so
 
 # Utilisation
 
-1. Enregistrez simplement le fichier Maqueen_Plus.py sur votre microbit V2
-1. Exécutez le code exemple que vous souhaitez dans le dossier "Exemples"
+1. Enregistrez simplement le fichier Maqueen_Plus.py dans le dossier "lib" sur votre microbit V2
+1. Exécutez le code exemple que vous souhaitez dans le dossier "exemples"
 
 <br>
 
