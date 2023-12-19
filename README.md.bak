@@ -1,7 +1,7 @@
 Vous avez des remarques, des suggestions ?
 Dites le moi ;)
 
------
+<br>
 
 # Mbot Robit
 
@@ -17,7 +17,7 @@ Cette librairie est reprise de celle de Christophe Gueneau. Merci à lui pour so
 
 ![Maqueen Plus](/Images/maqueen-plus.jpg?raw=true "Maqueen Plus")
 
------
+<br>
 
 # A faire (si j'y pense, par ordre d'importance)
 
@@ -26,14 +26,14 @@ Cette librairie est reprise de celle de Christophe Gueneau. Merci à lui pour so
 * Intégration de l'émetteur / récepteur IR
 * Intégration du buzzer
 
------
+<br>
 
 # Utilisation
 
 1. Enregistrez simplement le fichier Maqueen_Plus.py sur votre microbit V2
 1. Exécutez le code exemple que vous souhaitez dans le dossier "Exemples"
 
------
+<br>
 
 # API
 
@@ -50,14 +50,14 @@ Cette librairie est reprise de celle de Christophe Gueneau. Merci à lui pour so
  servosSet(angle1, angle2, angle3) | # angleX: 0-180
  servosRead() | # return [angle1, angle2, angle3] avec angleX: 0-180
 
------
+<br>
 
 # Notes
 
 * Le fichier tel quel est trop lourd pour le microbit V1 (il faudra un logiciel spécial)
 * Les encodeurs s'incrémentent dans tous les cas, que la base soit en marche arrière / avant
 
------
+<br>
 
 # Sources
 

@@ -3,7 +3,7 @@ Dites le moi ;)
 
 <br>
 
-# Mbot Robit
+# Maqueen Plus (V1)
 
 Librairie microbit pour diriger et communiquer avec la base roulante Maqueen-Plus.
 Elle permet de communiquer et/ou de contrôler :
